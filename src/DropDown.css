@@ -1,0 +1,63 @@
+/* DropDown.css */
+
+/* Wrapper to hold the image and dropdown */
+.dropDownWrapper {
+    position: fixed;  /* Fixed to the top-right corner of the screen */
+    top: 1rem; /* Add some space from the top */
+    right: 1rem; /* Add some space from the right */
+    z-index: 10; /* Ensure the image and dropdown are above other content */
+}
+
+/* User image styling */
+.user-img {
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+    border-radius: 50%; /* Circular image */
+    cursor: pointer;
+}
+
+/* Dropdown container */
+.dropDownProfile {
+    position: absolute;
+    top: 4.5rem; /* Position it below the user image */
+    right: 0; /* Align to the right of the user image */
+    width: 150px; /* Adjust to your desired width */
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+}
+
+/* Arrow pointing at the dropdown */
+.dropDownProfile::before {
+    content: '';
+    position: absolute;
+    top: -0.7rem; /* Position above the dropdown */
+    right: 1.1rem;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: white;
+    border-left: solid gray;
+    border-top: 1px solid gray;
+}
+
+/* Dropdown list styling */
+.dropDownProfile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropDownProfile li {
+    padding: 0.625rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropDownProfile li:hover {
+    background-color: #f0f0f0;
+}
