@@ -1,0 +1,26 @@
+.card{
+  border: 1px black solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px #21202065 ;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
+}
+
+.card .cardpic{
+  height: 120px;
+  max-width: 60%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.card .cardname{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  margin: 0;
+}
+.card .ptext{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+}
